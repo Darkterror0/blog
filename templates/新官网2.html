@@ -1,0 +1,814 @@
+
+<!doctype html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>北京金信网银</title>
+<!--    加入bootstrapt样式连接-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--    加入bootstrapt依赖包-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--    自动响应式布局-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"/>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=E1r6u1CD9SzZ08IxP32bNjgz"></script>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body data-spy="scroll" ondragstart="return false" class="container-fluid" style="overflow-x:hidden;">
+
+<!--导航条-->
+<div id="asdhnxz" class="col-sm-3">
+    <div>
+        <img id="datu01" src="../static/images/新的官网banner.jpg" alt="lose">
+        <nav id="daohang" class="navbar navbar-expand-sm justify-content-left">{#小屏幕上会垂直堆叠#}
+            <ul class="navbar-nav">
+                <li id="logo" class="nav-item">
+                    <a href="#section1">
+                        <img src="../static/images/logo.png" alt="jxlog" style="width: 50%;margin-top: 5%">
+                    </a>
+                </li>
+                <li class="nav-item"><a href="#section1" class="smoothScroll" style="text-decoration:none">产品介绍&nbsp;</a></li>
+                <li class="nav-item"><a href="#section2" class="smoothScroll" style="text-decoration:none">成功案例&nbsp;</a></li>
+                <li class="nav-item"><a href="#section3" class="smoothScroll" style="text-decoration:none">荣誉奖项&nbsp;</a></li>
+                <li class="nav-item"><a href="#section4" class="smoothScroll" style="text-decoration:none">监管培训&nbsp;</a></li>
+                <li class="nav-item"><a href="#section5" class="smoothScroll" style="text-decoration:none">媒体报道&nbsp;</a></li>
+                <li class="nav-item"><a href="#section6" class="smoothScroll" style="text-decoration:none">公司介绍&nbsp;</a></li>
+                <li class="nav-item"><a href="#section7" class="smoothScroll" style="text-decoration:none">联系我们&nbsp;</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!--第一部分:产品介绍-->
+<div id="section1">
+    <div id="cpjs">
+        <h2 class=".font-weight-bold text-center" style="color:black">了解我们的产品</h2><br>
+        <h6 class=".font-weight-bold text-center" style="color: #6c757d">让魑魅魍魉无所遁形</h6>
+        <div class="container onepage-wrapper" style="padding: 30px 0px;">
+
+            <div id="lunbo" class="carousel slide" data-ride="carousel">
+                <!-- 轮播控制条 -->
+                <div id="lunbotiao" class="carousel-indicators nav nav-pills d-flex justify-content-around mb-3" role="tablist">
+                    <p data-target="#lunbo" data-slide-to="0" data-toggle="pill" class="active" style="color: black">火眼金睛</p>
+                    <p data-target="#lunbo" data-slide-to="1" data-toggle="pill" style="color: black">定海神针</p>
+                    <p data-target="#lunbo" data-slide-to="2" data-toggle="pill" style="color: black">天罗地网</p>
+                    <p data-target="#lunbo" data-slide-to="3" data-toggle="pill" style="color: black">冒烟指数</p>
+                </div>
+                <div class="carousel-inner">
+                <!--第一个轮播-->
+                    <div class="carousel-item active">
+                        <div class="row">
+                                <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <img src="../static/images/火眼金睛.jpg" alt="company 1" class="float-left" style="width: 160%">
+                                    </div>
+                                </div>
+                            <div class="col-sm-6 col-md-7 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                                <h4 style="color: #0E73B2;">火眼金睛：金融风险态势感知与发现</h4>
+                                <p style="text-align:left ;font-size: 15px;">“火眼金睛”产品是金信网银公司在多年服务金融业监管的经验基础上，针对当前金融风险高发频发、地方金融监管部门人员有限、信息不足、发现滞后、联动处置困难、维稳压力大等痛点，为地方政府量身定做的一套专门用于地方金融风险监测预警防控的新式武器。
+                                    “火眼金睛”的核心是“冒烟指数”模型，系统整合舆情、工商、法院、招聘等多维异构化数据资源，应用文本挖掘、机器学习、知识图谱等大数据技术，综合分析计算监控对象的金融风险相关度，得出“冒烟指数”分值（森林着火必先冒烟，火势越大冒烟越大，冒烟指数分数越大代表企业金融风险程度越高），辅助地方金融监管机构摸清当地风险底数和日常发现预警风险信号。<br><br></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--第二个轮播-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <img src="../static/images/定海神针.jpg" alt="company 1">
+                                </div>
+                            </div>
+                            <div class="col col-sm-6 col-md-7" style="visibility: visible; animation-name: fadeInLeft;">
+                                <h4 style="color: #0E73B2;">定海神针：精确打击涉众型经济犯罪</h4>
+                                <p style="text-align:left ;font-size: 15px;">“定海神针”产品是金信网银公司在多年服务经侦干警一线办案的经验基础上，基于案件知识图谱搭建的大数据经济犯罪智能侦查平台。
+                                    “定海神针”以知识图谱技术为核心，能够对导入的各类案件数据进行有机关联与融合。针对犯罪集团组织结构、人员关系、运营状况、传销层级结构、资金流转等多个维度进行碰撞比对，形成丰富的技战法模型，并可一键获取研判结果，实现经济犯罪案件的主动型及全景式侦查。
+                                    金信网银与司法鉴定和司法审计强强合作，在经侦立案、侦查、证据梳理、到起诉各个环节提供高效的服务。为经侦解决办案过程中的诸多痛点，打通办案至起诉过程中数据在情报线索与证据支撑的转换壁垒，高效率、高质量的保障数据在情报中的运用，保证数据证据的完整与准确。<br><br></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--第三个轮播-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <img src="../static/images/天罗地网.jpg" alt="company 1" class="float-left" style="width: 160%">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-7 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                                <h4 style="color: #0E73B2;">天罗地网：人工智能AI中台，地方金融风险防控的基石</h4>
+                                <p style="text-align:left ;font-size: 15px;">金信网银根据多年业务积累及经验自主研发打造了具有“七十二变”的AI中台，可满足社会治理、社会信用管理、智慧经侦以及地方金融监管的各种应用场景需求。
+                                    AI中台具有智能化、弹性化、自动化的特征，包含大数据管理平台、指标管理系统、智能建模系统、运营工作平台、智能可视化平台五个子系统。<br><br></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--第四个轮播图-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <img src="../static/images/冒烟指数.jpg" alt="company 1" class="float-left" style="width: 160%">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-7 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                                <h4 style="color: #0E73B2;">冒烟指数：防控金融风险的利器</h4>
+                                <p style="text-align:left ;font-size: 15px;">“冒烟指数”最初的构想源于森林着火要冒烟的警示，烟的大小预示火势大小。冒烟指数主要从五个维度来考量企业的非法集资风险相关度，即合规性指数、收益率偏离指数、特征词命中指数、传播力指数、投诉举报指数，后经数据分析加权测算出冒烟指数，指数越高预示企业的风险越大。冒烟指数其中包括冒烟指数分析、冒烟指数变化分析等其他指标和功能。对指数在20-40分段内的企业，平台日常监测；指数在40～80分的企业会被列入重点监测群体，定期汇报给监管部门。监管机构金融办、工商、税务等部门将定期上门排查清理。对于超过 80分的企业，政法机关马上启动打击处置程序。<br><br></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--第二部分:成功案例-->
+<div id="section2">
+    <div  id="cgal">
+        <h1 class="text-center" style="color: white;position: relative;top: 8%;">成功案例</h1>
+        <h4 class="text-center" style="color: white;position: relative;top: 10%;">我们实时监测130万家地方金融机构动态，预警出12万家风险企业</h4>
+        <div class="container" style="position: relative;top: 0%;">
+            <div class="vertical-tab" role="tabpanel">
+                <div class="row" id="cgal_box" style="height: 800px">
+                    <div id="cgal_index" class="col-sm-3">
+                        <ul class="nav flex-column" role="tablist">
+                            <li role="presentation" class="active asce"><a href="#Se1" aria-controls="home" role="tab" data-toggle="tab"><h2 style="color: white">国家级</h2></a></li>
+                            <li role="presentation" class="asce"><a href="#Se2" aria-controls="profile" role="tab" data-toggle="tab"><h2 style="color: white">省级</h2></a></li>
+                            <li role="presentation" class="asce"><a href="#Se3" aria-controls="profile" role="tab" data-toggle="tab"><h2 style="color: white">市级</h2></a></li>
+                            <li role="presentation" class="asce"><a href="#Se4" aria-controls="profile" role="tab" data-toggle="tab"><h2 style="color: white">区级</h2></a></li>
+                        </ul>
+                    </div>
+                        <div class="tab-content nav  col-sm-3 col-sm-9">
+                            <div role="tabpanel" class="tab-pane fade in active" id="Se1">
+                                <h3 style="color: white">国家级</h3>
+                                <p style="color: white">我们实时监测130万家国家金融机构</p>
+                                <p style="color: white">-----------------------------------------------------------------------------------------------------------------------------------</p>
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <td >中国银行保险监督管理委员会</td>
+                                        <td>公安部</td>
+                                        <td>国家互联网信息办公室</td>
+                                        <td>中共中央网络安全和信息化委员会办公室</td>
+                                    </tr>
+                                    <tr><td>中国互联网金融协会</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Se2">
+                                <h3 style="color: white">省级</h3>
+                                <p style="color: white">我们实时监测130万家国家金融机构</p>
+                                <p style="color: white">-----------------------------------------------------------------------------------------------------------------------------------</p>
+                                <table class="table">
+                                    <tr>
+                                        <td>北京市地方金融监督管理局</td>
+                                        <td>重庆市地方金融监督管理局</td>
+                                        <td>江西省地方金融监督管理局</td>
+                                        <td>安徽省公安厅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>湖南省地方金融监督管理局</td>
+                                        <td>安徽省地方金融监督管理局</td>
+                                        <td>广东省地方金融监督管理局</td>
+                                        <td>广西壮族自治区公安厅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>黑龙江省公安厅</td>
+                                        <td>吉林省地方金融监督管理局</td>
+                                        <td>辽宁省地方金融监督管理局</td>
+                                        <td>内蒙古自治区地方金融监督管理局</td>
+                                    </tr>
+                                    <tr>
+                                        <td>宁夏回族自治区地方金融监督管理局</td>
+                                        <td>山东省公安厅</td>
+                                        <td>山西省公安厅</td>
+                                        <td>陕西省公安厅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>上海市公安局</td>
+                                        <td>中国证券监督管理委员会广东证监局</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Se3">
+                                <h3 style="color: white">市级</h3>
+                                <p style="color: white">我们实时监测130万家国家金融机构</p>
+                                <p style="color: white">-----------------------------------------------------------------------------------------------------------------------------------</p>
+                                <table class="table">
+                                    <tr>
+                                        <td>深圳市地方金融监督管理局</td>
+                                        <td>河北雄安新区管委会改革发展局</td>
+                                        <td>武汉市金融工作局</td>
+                                        <td>广州金融业协会</td>
+                                    </tr>
+                                    <tr>
+                                        <td>北京市通州区委政法委员会</td>
+                                        <td>宿迁市地方金融监督管理局</td>
+                                        <td>北京市房山区金融工作办公室</td>
+                                        <td>蚌埠市金融工作办公室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>北京市昌平区金融服务办公室</td>
+                                        <td>北京市大兴区金融工作办公室</td>
+                                        <td>北京市东城区产业和投资促进局</td>
+                                        <td>北京市公安局朝阳分局</td>
+                                    </tr>
+                                    <tr>
+                                        <td>北京市海淀区金融服务办公室</td>
+                                        <td>北京市怀柔区发展和改革委员会</td>
+                                        <td>北京市密云区发展和改革委员会</td>
+                                        <td>北京市顺义区金融服务办公室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>北京市西城区金融服务办公室</td>
+                                        <td>北京市延庆区发展和改革委员会</td>
+                                        <td>北亳州市地方金融监督管理局</td>
+                                        <td>赤峰市处置非法集资工作领导小组办公室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>德州市德城区金融工作办公室</td>
+                                        <td>鄂尔多斯市处置非法集资工作领导小组办公室</td>
+                                        <td>贵州省遵义市金融工作办公室</td>
+                                        <td>杭州市人民政府金融工作办公室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>淮北市地方金融监督管理局</td>
+                                        <td>淮南市地方金融监督管理局</td>
+                                        <td>吉林省长白山保护开发区管理委员会金融（上市）工作办公室</td>
+                                        <td>南京市公安局</td>
+                                    </tr>
+                                    <tr>
+                                        <td>内蒙古自治区乌兰察布市人民政府金融工作办公室</td>
+                                        <td>西安市公安局</td>
+                                        <td>西安市人民政府金融工作办公室</td>
+                                        <td>襄阳市人民政府金融办公室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>宣城市地方金融监督管理局</td>
+                                        <td>珠海市金融工作局 </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Se4">
+                                <h3 style="color: white">区级</h3>
+                                <p style="color: white">我们实时监测130万家国家金融机构</p>
+                                <p style="color: white">-----------------------------------------------------------------------------------------------------------------------------------</p>
+                                <table class="table">
+                                    <tr>
+                                        <td>深圳市福田区投资推广署（金融发展事务署）</td>
+                                        <td>阿拉善左旗金融工作服务中心</td>
+                                        <td>东胜区公安局打击非法吸收公众存款办公室</td>
+                                        <td>多伦县财政局</td>
+                                    </tr>
+                                    <tr>
+                                        <td>哈尔滨市公安局南岗区分局</td>
+                                        <td>杭州市江干区公安分局</td>
+                                        <td>横琴新区金融服务中心</td>
+                                        <td>江干区发展改革和经济局</td>
+                                    </tr>
+                                    <tr>
+                                        <td>江西省南昌市公安局红谷滩分局</td>
+                                        <td>龙井市金融服务中心</td>
+                                        <td>青州市公安局</td>
+                                        <td>温州市鹿城区人民政府金融工作办公室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>武汉市武昌区金融工作局</td>
+                                        <td>珠海（国家）高新技术产业开发区管理委员会发展改革和财政金融局</td>
+                                        <td>珠海经济技术开发区（高栏港经济区）发展改革和财政金融局</td>
+                                        <td>珠海市横琴新区管理委员会金融服务局</td>
+                                    </tr>
+                                    <tr>
+                                        <td>上海市公安局</td>
+                                        <td>中国证券监督管理委员会广东证监局</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--第三部分:荣誉奖项-->
+<div id="section3">
+
+    <div class="container-fluid" id="ryjx">
+        <h1 class="text-center" style="position: relative;top: 8%;">荣誉奖项</h1>
+        <h4 class="text-center" style="position: relative;top: 10%;">一共得了多少个奖项，重量级</h4>
+        <div id="ryjx_list" class="carousel slide " data-ride="carousel">
+            <div id="ryjx_lunbo" class="nav carousel-indicators d-flex justify-content-around" style="margin-left: 16%;">
+
+                <div data-target="#ryjx_list" data-slide-to="0" class="d-flex flex-column active">
+                    <div>
+                        <img src="../static/images/分组 1312.png" alt="image lose" style="width: 60%;position: relative;left: 20%;">
+                    </div>
+                    <div>
+                        <h4 style="color: black" class="text-center">实践案例</h4>
+                    </div>
+                </div>
+                <div data-target="#ryjx_list" data-slide-to="1" class="d-flex flex-column">
+                    <div>
+                        <img class="float-center" src="../static/images/分组 182.png" alt="image lose" style="width: 60%;position: relative;left: 20%;">
+                    </div>
+                    <div>
+                        <h4 style="color: black" class="text-center">荣誉称号</h4>
+                    </div>
+                </div>
+                <div data-target="#ryjx_list" data-slide-to="2" class="d-flex flex-column">
+                    <div>
+                        <img src="../static/images/分组 651.png" alt="image lose" style="width: 60%;position: relative;left: 20%;">
+                    </div>
+                    <div>
+                        <h4 style="color: black" class="text-center">资金支持</h4>
+                    </div>
+                </div>
+            </div>
+            <p style="height: 8px;background-color: #ffffff;position: relative;top: 17px;"></p>
+            <p style="height:1px;box-shadow: 0px 3px 6px #333333;"></p>
+            <div class="carousel-inner" style="position: relative;left: 15%;top: 15px;">
+                <!--第一个轮播图-->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!--第一列-->
+                        <div class="col-sm-3">
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/06.png" alt="img lose"></p>
+                                        
+                                        <h5 class="text-center">中国金融四十人论坛-2019融城杯金融科技创新十佳案例</h5>
+                                    </div>
+                                </div>
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/07.png" alt="img lose"></p>
+                                        <h5 class="text-center">中国支付清算协会、中国信通院 “金融大数据创新应用优秀成果奖”</h5>
+                                    </div>
+                                </div>
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/05.png" alt="img lose"></p>
+                                        <h5 class="text-center">金猿奖•2017金融科技优秀案例奖</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        第二列-->
+                        <div class="col-sm-3">
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="card"   style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/04.png" alt="img lose"></p>
+                                        <h5 class="text-center">2019中国金融科技竞争力100强</h5>
+                                    </div>
+                                </div>
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/03.png" alt="img lose"></p>
+                                        <h5 class="text-center">2018互联网大会 “大数据应用最佳实践案例奖项”</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        第三列-->
+                        <div class="col-sm-3">
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/01.png" alt="img lose"></p>
+                                        <h5 class="text-center">“众智护网”•2019年度防范治理电信网络诈骗创新实践案例</h5>
+                                    </div>
+                                </div>
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/02.png" alt="img lose" style="width: 35%"></p>
+                                        <h5 class="text-center">《普华永道中国金融科技调查报告》十大案例</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第二个轮播-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!--第一列-->
+                        <div class="col-sm-3">
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/荣誉称号/06.png" alt="img lose"></p>
+                                        <h5 class="text-center">总经理李崇纲被聘为中国互联网金融协会信用建设委员</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--                        第二列-->
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="card"   style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/04.png" alt="img lose"></p>
+                                        <h5 class="text-center">2019中国金融科技竞争力100强</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--                        第三列-->
+                            <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-circle" src="../static/images/荣誉奖项/实践案例/01.png" alt="img lose"></p>
+                                        <h5 class="text-center">“众智护网”•2019年度防范治理电信网络诈骗创新实践案例</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第三个轮播-->
+                <div class="carousel-item">
+                        <!--第一列-->
+                        <div class="col-sm-3">
+                                <div class="card"  style="margin-bottom: 20px;margin-top: 10px;">
+                                    <div class="card-body">
+                                        <p class="text-center"><img class="img-top" src="../static/images/荣誉奖项/资金支持/01.png" alt="img lose" style="width: 35%"></p>
+                                        <h5 class="text-center">荣获“2018年度中关村金融科技支持资金项目”</h5>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--第四部分:监管培训-->
+<div id="section4" >
+    <div id="jgpx" style="height:1000px">
+        <h1 class="text-center" style="color: white;position: relative;top: 8%;">监管培训</h1>
+        <h4 class="text-center" style="color: white;position: relative;top: 10%;">平均每月都有两场培训，受众超过5000个地方金融监管干部</h4>
+
+        <div style="position: relative;top: 70%;left:0px;"class="d-flex justify-content-around mb-3">
+            <h1  style="color: white;">58</h1>
+            <h1  style="color: white;">38</h1>
+            <h1  style="color: white;">5000</h1>
+        </div>
+        <div style="position: relative;top: 70%;left:0px;"class="d-flex justify-content-around mb-3">
+            <h5 style="color: white">场培训</h5>
+            <h5 style="color: white">个城市</h5>
+            <h5 style="color: white">受众人群</h5>
+        </div>
+
+    </div>
+</div>
+
+<!--第五部分:媒体报道-->
+<div id="section5">
+    <div class="container-fluid" id="mtbd">
+        <h1 class="text-center" style="position: relative;top: 8%;">媒体报道</h1>
+        <h4 class="text-center" style="position: relative;top: 10%;">一共被报道了多少次</h4>
+        <div id="mt_lunbo" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner row" style="position: relative;top: 120px;left: 18%;">
+                <!-- 第一个轮播 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-6 col-lg-4">
+                                <!-- 第一列 -->
+                                <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                    <a href="http://bjrb.bjd.com.cn/html/2019-06/16/content_11889834.htm">
+                                        <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <img class="card-img-left" src="../static/images/分组 36.jpg" alt="img lose">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <h4 style="color: black" class="card-text">金融监管局召开扫黑除恶再动员部署会</h4>
+                                                        <p id="box2" style="color: dimgray">--北京日报 2019-06-16</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="http://mp.weixin.qq.com/s?__biz=MzU2NjQ5NDMyMA==&idx=1&mid=2247488062&sn=1b2509b58e2938c3b8d21d6e0824cd39">
+                                        <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img class="card-img-left" src="../static/images/分组 36 copy 2.jpg" alt="img lose">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                        <h4 style="color: black" class="card-text">霍学文：北京建设了冒烟指数预测系统，对非法金融活动“零容忍”！</h4>
+                                                        <p id="box2" style="color: dimgray">--21世纪经济报道 2019-05-22</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </a>
+                                    <a href="http://mp.weixin.qq.com/s?__biz=MzA3MDQ5NDYzMA==&idx=1&mid=2650233904&sn=9a145962b9b3e5337b6af0d2f0464ebd">
+                                        <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <img class="card-img-left" src="../static/images/分组 36 copy 4.jpg" alt="img lose">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <h4 style="color: black" class="card-text">地方金融监管：新格局下的新使命</h4>
+                                                        <p id="box2" style="color: dimgray">--银行家杂志 2019-01-02</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                                <!-- 第二列 -->
+                            <div class="col-sm-3 col-md-6 col-lg-4">
+                                <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                    <a href="http://www.toutiao.com/i6694563761396646408/">
+                                        <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <img class="card-img-left" src="../static/images/分组 43.jpg" alt="img lose">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                    <h4 style="color: black" class="card-text">金信网银李崇纲：监管科技崛起，三类机构已入局</h4>
+                                                    <p id="box2" style="color: dimgray">--零壹财经 2019-05-24</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="http://xh.xhby.net/mp3/pc/c/201904/19/c621784.html">
+                                        <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img class="card-img-left" src="../static/images/分组 36.jpg" alt="img lose">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <h4 style="color: black" class="card-text">大数据分析师，抢手的“读心神探”</h4>
+                                                            <p id="box2" style="color: dimgray">--新华日报 2019-4-19</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </a>
+                                    <a href="http://hb.people.com.cn/n2/2019/0308/c194063-32717659.html">
+                                        <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <img class="card-img-left" src="../static/images/分组 48.jpg" alt="img lose">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <h4 style="color: black" class="card-text">把风险化解在萌芽状态 湖北开展金融风险隐患全面排查</h4>
+                                                        <p id="box2" style="color: dimgray">--湖北日报 2019-03-08</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二个轮播 -->
+                    <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3 col-md-6 col-lg-4">
+                                    <!-- 第一列 -->
+                                    <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                        <a href="http://epaper.cpd.com.cn/szb/20190325/b0cc5474d4292a41d8ac958b88e15003.x">
+                                            <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img class="card-img-left" src="../static/images/分组 36.jpg" alt="img lose">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <h4 style="color: black" class="card-text">深圳如何实现警情连续三年降幅超20%</h4>
+                                                            <p id="box2" style="color: dimgray">--人民公安报 2019-03-25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="http://finance.sina.com.cn/roll/2019-01-23/doc-ihqfskcn9551632.shtml">
+                                            <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3">
+                                                                <img class="card-img-left" src="../static/images/分组 36 copy 2.jpg" alt="img lose">
+                                                            </div>
+                                                            <div class="col-sm-9">
+                                                            <h4 style="color: black" class="card-text">市场出清和存量优化是 下一步P2P监管的两大重点</h4>
+                                                            <p id="box2" style="color: dimgray">--21世纪经济报道 2019-05-23</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </a>
+                                        <a href="http://mp.weixin.qq.com/s?__biz=MzA3MDQ5NDYzMA==&idx=1&mid=2650233904&sn=9a145962b9b3e5337b6af0d2f0464ebd">
+                                            <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img class="card-img-left" src="../static/images/分组 36 copy 4.jpg" alt="img lose">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <h4 style="color: black" class="card-text">地方金融监管：新格局下的新使命</h4>
+                                                            <p id="box2" style="color: dimgray">--银行家杂志 2019-01-02</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                    <!-- 第二列 -->
+                                <div class="col-sm-3 col-md-6 col-lg-4">
+                                    <div class="col-sm-6 col-md-5" style="visibility: visible; animation-name: fadeInRight;">
+                                        <a href="http://www.hubei.gov.cn/zwgk/bmdt/201901/t20190123_1379475.shtml">
+                                            <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img class="card-img-left" src="../static/images/分组 43.jpg" alt="img lose">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                        <h4 style="color: black" class="card-text">清不良 挤泡沫 治乱象 湖北非法集资陈案一年下降50%</h4>
+                                                        <p id="box2" style="color: dimgray">--湖北日报 2019-01-23</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="http://mp.weixin.qq.com/s?__biz=MjM5MzA3MzAzOQ==&idx=1&mid=2655473758&sn=e946a3c82ad3468669be6f076bc56cc7">
+                                            <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3">
+                                                                <img class="card-img-left" src="../static/images/分组 36.jpg" alt="img lose">
+                                                            </div>
+                                                            <div class="col-sm-9">
+                                                                <h4 style="color: black" class="card-text">发挥金融科技正向作用构筑金融信用生态体系</h4>
+                                                                <p id="box2" style="color: dimgray">--金融电子化 2019-01-10</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </a>
+                                        <a href="https://mp.weixin.qq.com/s?__biz=MjM5NjE1NzQxNg==&idx=1&mid=2655131091&sn=263c73175d00d5faa6c90d20be374f3f">
+                                            <div id="mt_card" class="card"  style="margin-bottom: 20px;margin-top: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img class="card-img-left" src="../static/images/分组 48.jpg" alt="img lose">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <h4 style="color: black" class="card-text">东城检察院发布《涉众型经济犯罪研究报告</h4>
+                                                            <p id="box2" style="color: dimgray">--东城检察 2019-1-10</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <ul class="carousel-indicators" style="position: relative;top:150px;">
+                <li data-target="#mt_lunbo" style=" width: 10px;height: 10px;border: 1px solid #282EFF;border-radius: 20px;background-color: #282eff;opacity: 0.5;" data-slide-to="0" class="active"></li>&nbsp;&nbsp;
+                <li data-target="#mt_lunbo" style=" width: 10px;height: 10px;border: 1px solid #282EFF;border-radius: 20px;background-color: #282EFF;opacity: 0.5;" data-slide-to="1"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--第六部分:公司介绍-->
+<div id="section6" class="container">
+    <h1 class="text-center" style="position: relative;top: 8%;">公司介绍</h1><br>
+    <h4 class="text-center" style="position: relative;top: 12%;">让天下没有骗人的公司</h4>
+    <p1 class="text-center">金信网银公司成立于2014年，在监管科技（RegTech）领域积极探索与实践，研发了防控金融风险的利器——“冒烟指数”，实现对非法集资、高利贷、套路贷等非法金融活动的预警和研判。依托“冒烟指数”风险防控模型和多年服务地方金融监管以及一线经侦的实践经验，公司研发了可实现金融企业准入预警、重点金融领域监管、非法金融广告监管等功能的“火眼金睛”金融风险监测预警平台；透过资金异动实现精确破案的“定海神针”大数据经济犯罪智能侦查平台；服务于社会治理及信用管理的“天罗地网”金融监管AI中台等产品。金信网银公司已形成了一套金融风险防控全链条治理解决方案，成为监管科技（RegTech）领域的领先者。</p1>
+    <br><br><br>
+    <img class="img-responsive center-block" src="../static/images/逻辑图.jpg" alt="lose" style="width: 100%; position:relative;">
+    <br><br><br>
+</div>
+
+<!--第七部分联系我们-->
+<div id="section7">
+    <div id="lxwm" class="container-fluid">
+        <h1 style="color: white;position: relative;top: 8%;" class="text-center">联系我们</h1>
+        <section id="team" class="text-center section">
+            <div id="lxwm2" class="container">
+                <div class="row" style="position: relative;top: 10%;margin-bottom: 6%; margin-left: 5%;">
+                    <div class="col-md-4 col-sm-3">
+                        <h4 class="text-left ">商务咨询</h4>
+                        <p style="height: 4px; width: 40px; background-color: #2b4dfc;position: relative;top: 5px;margin-bottom: 5%;border-radius: 10px;"></p>
+                        <p class="text-left" style="color: #6c757d"><span>联系人:</span>李先生 <br>
+                        <span>联系电话:</span> 18516969614</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="text-left">技术咨询</h4>
+                        <p style="height: 4px; width: 40px; background-color: #2b4dfc;position: relative;top: 5px;margin-bottom: 5%;border-radius: 10px;"></p>
+                        <p class="text-left"  style="color: #6c757d"> <span>联系人:</span>  许先生 <br><span>联系电话:</span> 13810362763</p>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <h4 >商务合作</h4>
+                        <p style="height: 4px; width: 40px; background-color: #2b4dfc;position: relative;top: 5px;margin-bottom: 5%;border-radius: 10px;"></p>
+                        <img src="../static/images/李总二维码.jpg" class="img-responsive" alt="team" style="  height: 90px;  width: 90px;">
+                    </div>
+                </div>
+                <p style="height: 1px; width: 85%; background-color: #d8d8d8;position: relative;top: 17px;margin-bottom: 5%;margin-left: 5%;"></p>
+                <div class="col-sm-10 col-md-10" data-wow-delay="2000" style="margin-left: 5%">
+                    <div>
+                        <p style="height: 28px; width: 4px; background-color: #2b4dfc;position: relative;top: 5px;margin-bottom: 5%;border-radius: 10px;float: left"></p>
+                        <p style="margin-bottom: 30px;margin-left: 15px;" class="text-left"><span class="h4"> 公司地址: </span><span style="color: #6c757d">北京市朝阳区安翔北路创业大厦B座17层(100101)</span></p>
+                        <div id="map" style="height: 300px; border: 1px solid rgb(204, 204, 204); font-size: 12px; overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; background-color: rgb(243, 241, 236);"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 635px; height: 174px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; background: url(&quot;http://api0.map.bdimg.com/images/blank.gif&quot;); width: 20px; height: 25px; left: 268px; top: 39px; z-index: -7999946;" title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font: 12px arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 268px; top: 39px; z-index: -7999946;"><div style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 25px; overflow: hidden;"><img src="./北京金信网银_files/icon.png" style="display: block; border:none;margin-left:-23px; margin-top:-21px; "></div><label class="BMapLabel" unselectable="on" style="position: absolute; display: inline; cursor: inherit; background-color: rgb(255, 255, 255); border: 1px solid rgb(255, 0, 0); padding: 1px; white-space: nowrap; font: 12px arial, sans-serif; z-index: 80; user-select: none; left: 25px; top: 5px;">北京金信网银金融信息服务有限公司</label></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: 318px; top: 87px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="./北京金信网银_files/saved_resource" style="position: absolute; border: none; width: 256px; height: 256px; left: -333px; top: 0px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(1)" style="position: absolute; border: none; width: 256px; height: 256px; left: -77px; top: 0px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(2)" style="position: absolute; border: none; width: 256px; height: 256px; left: -77px; top: -256px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(3)" style="position: absolute; border: none; width: 256px; height: 256px; left: 179px; top: 0px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(4)" style="position: absolute; border: none; width: 256px; height: 256px; left: 179px; top: -256px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(5)" style="position: absolute; border: none; width: 256px; height: 256px; left: -333px; top: -256px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;"><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a><div class=" anchorBL" style="height: 32px; position: absolute; z-index: 30; text-size-adjust: none; bottom: 20px; right: auto; top: auto; left: 1px;"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="./北京金信网银_files/copyright_logo.png"></a></div><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api0.map.bdimg.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div unselectable="on" class=" BMap_scaleCtrl BMap_noprint anchorBL" style="bottom: 18px; right: auto; top: auto; left: 81px; width: 86px; position: absolute; z-index: 10; text-size-adjust: none;"><div class="BMap_scaleTxt" unselectable="on" style="background-color: transparent; color: black;">200&nbsp;英尺</div><div class="BMap_scaleBar BMap_scaleHBar" style="background-color: black;"><img style="border:none" src="./北京金信网银_files/mapctrls.png"></div><div class="BMap_scaleBar BMap_scaleLBar" style="background-color: black;"><img style="border:none" src="./北京金信网银_files/mapctrls.png"></div><div class="BMap_scaleBar BMap_scaleRBar" style="background-color: black;"><img style="border:none" src="./北京金信网银_files/mapctrls.png"></div></div><div unselectable="on" class=" BMap_omCtrl BMap_ieundefined BMap_noprint anchorBR quad4" style="width: 150px; height: 150px; bottom: 0px; right: 0px; top: auto; left: auto; position: absolute; z-index: 10; text-size-adjust: none;"><div class="BMap_omOutFrame" style="width: 149px; height: 149px;"><div class="BMap_omInnFrame" style="bottom: auto; right: auto; top: 5px; left: 5px; width: 142px; height: 142px;"><div class="BMap_omMapContainer" style="overflow: hidden; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left; z-index: 0;"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 140px; height: 140px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><div class="BMap_Division" style="position: absolute; width: 40px; display: block; overflow: hidden; border-width: 1px; border-style: solid; border-color: rgb(173, 207, 244) rgb(39, 75, 139) rgb(39, 75, 139) rgb(132, 176, 223); border-image: initial; opacity: 1; z-index: 60; user-select: none; left: 49px; top: 63px; height: 11px;"><div class="BMap_omViewInnFrame" style="width: 38px; height: 9px;"><div class="BMap_omViewMask"></div></div></div></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font: 12px arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: 70px; top: 70px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="./北京金信网银_files/saved_resource(6)" style="position: absolute; border: none; width: 256px; height: 256px; left: -276px; top: -208px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(7)" style="position: absolute; border: none; width: 256px; height: 256px; left: -20px; top: 48px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(8)" style="position: absolute; border: none; width: 256px; height: 256px; left: -276px; top: 48px; max-width: none; opacity: 1;"><img src="./北京金信网银_files/saved_resource(9)" style="position: absolute; border: none; width: 256px; height: 256px; left: -20px; top: -208px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;"><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a></div><div class="BMap_omViewMv" style="cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default; width: 40px; height: 11px; left: 49px; top: 63px;"><div class="BMap_omViewInnFrame" style="width: 38px; height: 9px;"><div></div></div></div></div></div><div class="BMap_omBtn" style="bottom: 0px; right: 0px; top: auto; left: auto;"></div></div><div unselectable="on" class=" BMap_stdMpCtrl BMap_stdMpType0 BMap_noprint anchorTL" style="width: 62px; height: 186px; bottom: auto; right: auto; top: 10px; left: 10px; position: absolute; z-index: 1100; text-size-adjust: none;"><div class="BMap_stdMpPan"><div class="BMap_button BMap_panN" title="向上平移"></div><div class="BMap_button BMap_panW" title="向左平移"></div><div class="BMap_button BMap_panE" title="向右平移"></div><div class="BMap_button BMap_panS" title="向下平移"></div><div class="BMap_stdMpPanBg BMap_smcbg"></div></div><div class="BMap_stdMpZoom" style="height: 141px; width: 62px;"><div class="BMap_button BMap_stdMpZoomIn" title="放大一级"><div class="BMap_smcbg"></div></div><div class="BMap_button BMap_stdMpZoomOut" title="缩小一级" style="top: 120px;"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSlider" style="height: 102px;"><div class="BMap_stdMpSliderBgTop" style="height: 102px;"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSliderBgBot" style="top: 7px; height: 99px;"></div><div class="BMap_stdMpSliderMask" title="放置到此级别"></div><div class="BMap_stdMpSliderBar" title="拖动缩放" style="cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default; top: 7px;"><div class="BMap_smcbg"></div></div></div><div class="BMap_zlHolder"><div class="BMap_zlSt"><div class="BMap_smcbg"></div></div><div class="BMap_zlCity"><div class="BMap_smcbg"></div></div><div class="BMap_zlProv"><div class="BMap_smcbg"></div></div><div class="BMap_zlCountry"><div class="BMap_smcbg"></div></div></div></div><div class="BMap_stdMpGeolocation" style="position: initial; display: none; margin-top: 43px; margin-left: 10px;"><div class="BMap_geolocationContainer" style="position: initial; width: 24px; height: 24px; overflow: hidden; margin: 0px; box-sizing: border-box;"><div class="BMap_geolocationIconBackground" style="width: 24px; height: 24px; background-image: url(http://api0.map.bdimg.com/images/navigation-control/geolocation-control/pc/bg-20x20.png); background-size: 20px 20px; background-position: 3px 3px; background-repeat: no-repeat;"><div class="BMap_geolocationIcon" style="position: initial; width: 24px; height: 24px; cursor: pointer; background-image: url(&#39;http://api0.map.bdimg.com/images/navigation-control/geolocation-control/pc/success-10x10.png&#39;); background-size: 10px 10px; background-repeat: no-repeat; background-position: center;"></div></div></div></div></div><div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; color: black; background: none; font: 11px/15px arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 2px; position: absolute; z-index: 10; text-size-adjust: none;"><span _cid="1" style="display: inline;"><span style="background: rgba(255, 255, 255, 0.701961);padding: 0px 1px;line-height: 16px;display: inline;height: 16px;">©&nbsp;2019 Baidu - GS(2018)5572号 - 甲测资字1100930 - 京ICP证030173号 - Data © 长地万方</span></span></div></div><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="panel-footer text-center" style="color:white;position: relative;top:19%;">
+            北京金信网银金融信息服务有限公司 Copyright©2015. &nbsp;&nbsp;&nbsp;京ICP备15040272号
+        </p>
+        <script type="text/javascript">
+            //创建和初始化地图函数：
+            function initMap(){
+                createMap();//创建地图
+                setMapEvent();//设置地图事件
+                addMapControl();//向地图添加控件
+                addMapOverlay();//向地图添加覆盖物
+            }
+            function createMap(){
+                map = new BMap.Map("map");
+                map.centerAndZoom(new BMap.Point(116.384295,39.999479),18);
+            }
+            function setMapEvent(){
+                map.enableScrollWheelZoom();
+                map.enableKeyboard();
+                map.enableDragging();
+                map.enableDoubleClickZoom()
+            }
+            function addClickHandler(target,window){
+                target.addEventListener("click",function(){
+                    target.openInfoWindow(window);
+                });
+            }
+            function addMapOverlay(){
+                var markers = [
+                    {content:"北京市朝阳区安翔北路创业大厦B座17层",title:"北京金信网银金融信息服务有限公司",imageOffset: {width:-23,height:-21},position:{lat:39.999731,lng:116.383941}}
+                ];
+                for(var index = 0; index < markers.length; index++ ){
+                    var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                    var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                            imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                        })});
+                    var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                    var opts = {
+                        width: 200,
+                        title: markers[index].title,
+                        enableMessage: false
+                    };
+                    var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                    marker.setLabel(label);
+                    addClickHandler(marker,infoWindow);
+                    map.addOverlay(marker);
+                };
+            }
+            //向地图添加控件
+            function addMapControl(){
+                var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                map.addControl(scaleControl);
+                var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                map.addControl(navControl);
+                var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                map.addControl(overviewControl);
+            }
+            var map;
+            initMap();
+        </script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;callback=initialize"></script>
+
+    </div>
+
+</div>
+</body>
+</html>

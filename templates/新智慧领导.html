@@ -683,12 +683,14 @@
                                                     </div>
 
             </div>
+            <div id="chart" style="height: 450px;width: 450px"></div>
 
             <div style="text-align:center;margin:10px 12px 20px 12px; ">
 
                 <div style="clear:both;height:10px;"></div>
                 <span class="btn btn-primary btnConfirm" style="width:200px;border-radius:0px;margin-top:10px;">提交</span>
             </div>
+
 {#            <div style="height:40px;margin:auto;text-align:center;">#}
 {#                <span>技术支持&amp;</span><a target="_blank" href="http://www.eggtwo.com/"></a>#}
 {#            </div>#}
@@ -696,6 +698,64 @@
         </div>
         
     </form>
+
+    <div id="chart" style="height: 450px;width: 450px"></div>
+
+    <script src="../static/新智慧领导_files/echarts.min.js"></script>
+    <script>
+      var radar_chart = echarts.init(document.getElementById("chart"));
+      var option = {
+        title: {
+          text: '基础雷达图'
+        },
+        tooltip: {},
+    //    legend: {
+    //      data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
+    //    },
+        radar: {
+          // shape: 'circle',
+          name: {
+            textStyle: {
+              color: '#fff',
+              backgroundColor: '#999',
+              borderRadius: 3,
+              padding: [3, 5]
+            }
+          },
+          indicator: [
+            { name: '销售', max: 6500},
+            { name: '管理', max: 16000},
+            { name: '信息技术', max: 30000},
+            { name: '客服', max: 38000},
+            { name: '研发', max: 52000},
+            { name: '市场', max: 25000}
+          ]
+        },
+        series: [{
+          // name: '预算 vs 开销（Budget vs spending）',
+          type: 'radar',
+          // areaStyle: {normal: {}},
+          itemStyle: {
+            normal: {
+              color: '#a8bcd4'
+            }
+          },
+          data : [
+            {
+              value : [4300, 10000, 28000, 35000, 50000, 19000],
+              name : '预算分配（Allocated Budget）'
+            },
+            //  {
+            //     value : [5000, 14000, 28000, 31000, 42000, 21000],
+            //     name : '实际开销（Actual Spending）'
+            // }
+          ]
+        }]
+      };
+      radar_chart.setOption(option);
+
+    </script>
+
 
 
 

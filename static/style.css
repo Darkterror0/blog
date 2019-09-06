@@ -74,8 +74,15 @@
     #mt_card #box2{
         position:absolute;right:8px;bottom:0;
     }
+
     td{
         color: white;
+        width: 12%;
+        height: 10%;
+  background-color: #767676;
+  border:4px solid #040404;
+background-color:rgba(255,255,255,0.3)
+ /* IE8 及更早版本 */
     }
     .table > tbody > tr > td
     {
